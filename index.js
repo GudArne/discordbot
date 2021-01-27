@@ -13,7 +13,7 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    if(receivedMessage.content.includes('https://www.youtube.com/watch?v=ZoG5jJ3E8rg'))
+    if(receivedMessage.content == 'https://www.youtube.com/watch?v=ZoG5jJ3E8rg')
     {
       receivedMessage.channel.send('ola skip');
     }
