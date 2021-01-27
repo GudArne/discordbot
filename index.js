@@ -16,14 +16,9 @@ client.on('message', (receivedMessage) => {
     if(receivedMessage.content == 'ola play replay')
     {
       const timeoutObj1 = setTimeout(() => {
-    receivedMessage.channel.send('ola jump replay');
-    
-}, 2500);
-      const timeoutObj2 = setTimeout(() => {
     receivedMessage.channel.send('ola skip');
-    
-}, 2500);
-      
+    }, 3000);
+
     }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
