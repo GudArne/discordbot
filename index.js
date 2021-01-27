@@ -13,7 +13,10 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    console.log('En fluga');
+    if(receivedMessage.content === 'ola play replay')
+    {
+      receivedMessage.channel.send('ola skip');
+    }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
