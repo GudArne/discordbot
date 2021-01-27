@@ -8,19 +8,19 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-
+while(true){
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
     if (receivedMessage.author == client.user) {
         return
     }
-    //receivedMessage.react('\:fluga:');
+    console.log('En fluga');
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
     
 });
-
+}
 // Get your bot's secret token from:
 // https://discordapp.com/developers/applications/
 // Click on your application -> Bot -> Token -> "Click to Reveal Token"
