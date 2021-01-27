@@ -15,12 +15,14 @@ client.on('message', (receivedMessage) => {
     //}
     if(receivedMessage.content == 'ola play replay')
     {
-      const timeoutObj1 = setTimeout(() => {
+      const timeoutObj = setTimeout(() => {
     receivedMessage.channel.send('ola jump replay');
-    const timeoutObj2 = setTimeout(() => {
+    
+}, 2500);
+      const timeoutObj = setTimeout(() => {
     receivedMessage.channel.send('ola skip');
-}, 2000);
-}, 2000);
+    
+}, 2500);
       
     }
 
