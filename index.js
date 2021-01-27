@@ -1,3 +1,4 @@
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var generalChannel = client.channels.cache.get("481170353670979587");
