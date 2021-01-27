@@ -13,18 +13,14 @@ client.on('message', (receivedMessage) => {
     //if (receivedMessage.author == client.user) {
     //    return
     //}
-    if(receivedMessage.content == 'ola play replay')
-    {
-      const timeoutObj1 = setTimeout(() => {
-    receivedMessage.channel.send('ola skip');
-    }, 3000);
+    //if(receivedMessage.content == 'ola play replay')
+    //{
+    //  const timeoutObj1 = setTimeout(() => {
+    //receivedMessage.channel.send('ola skip');
+    //}, 3000);
 
-    }
-        if(receivedMessage.content == 'Jens din jäkel! HÅLL INTE PÅ!!!!')
-    {
-    receivedMessage.channel.send('ola skip');
+    //}
 
-    }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
