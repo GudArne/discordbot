@@ -10,14 +10,14 @@ client.once('ready', () => {
 
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
-    if (receivedMessage.author == client.user) {
-        return
-    }
+    //if (receivedMessage.author == client.user) {
+    //    return
+    //}
     if(receivedMessage.content == 'ola play replay')
     {
       const timeoutObj = setTimeout(() => {
   receivedMessage.channel.send('ola remove replay');
-}, 1500);
+}, 2500);
       
     }
 
