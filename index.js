@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 var generalChannel = client.channels.cache.get("481170353670979587")
-var envKey = process.env.laban
+//var envKey = process.env.laban
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -23,6 +23,6 @@ client.on('message', (receivedMessage) => {
 // Get your bot's secret token from:
 // https://discordapp.com/developers/applications/
 // Click on your application -> Bot -> Token -> "Click to Reveal Token"
-bot_secret_token = envKey
+//bot_secret_token = envKey
 
-client.login(bot_secret_token)
+client.login(process.env.laban)
