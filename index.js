@@ -20,6 +20,13 @@ client.on('message', (receivedMessage) => {
     }, 3000);
 
     }
+        if(receivedMessage.content == 'Jens din jäkel! HÅLL INTE PÅ!!!!')
+    {
+      const timeoutObj2 = setTimeout(() => {
+    receivedMessage.channel.send('HAHAHHAHAHAH');
+    }, 500);
+
+    }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
