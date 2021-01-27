@@ -13,7 +13,7 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    if(receivedMessage.content.incudes('Now playing'))
+    if(receivedMessage.content.includes('Now playing'))
     {
       receivedMessage.channel.send('ola skip');
     }
