@@ -13,7 +13,7 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    if(receivedMessage.content == 'Replay - Iyaz')
+    if(receivedMessage.content == 'Now playing')
     {
       receivedMessage.channel.send('ola skip');
     }
