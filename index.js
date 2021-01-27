@@ -22,9 +22,7 @@ client.on('message', (receivedMessage) => {
     }
         if(receivedMessage.content == 'Jens din jäkel! HÅLL INTE PÅ!!!!')
     {
-      const timeoutObj2 = setTimeout(() => {
     receivedMessage.channel.send('ola skip');
-    }, 500);
 
     }
 
