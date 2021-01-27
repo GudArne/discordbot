@@ -13,9 +13,12 @@ client.on('message', (receivedMessage) => {
     if (receivedMessage.author == client.user) {
         return
     }
-    if(receivedMessage.content == 'https://www.youtube.com/watch?v=ZoG5jJ3E8rg')
+    if(receivedMessage.content == 'ola play replay')
     {
-      receivedMessage.channel.send('ola skip');
+      const timeoutObj = setTimeout(() => {
+  console.log('timeout beyond time');
+}, 1500);
+      receivedMessage.channel.send('ola remove replay');
     }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
