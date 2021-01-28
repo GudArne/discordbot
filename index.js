@@ -8,7 +8,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 
 });
-      client.client.setPresence({
+      client.user.setPresence({
         status: "online",  //You can show online, idle....
         game: {
             name: "flugor",  //The message shown
