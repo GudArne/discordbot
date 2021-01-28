@@ -6,7 +6,15 @@ var generalChannel = client.channels.cache.get("481170353670979587");
 
 client.once('ready', () => {
 	console.log('Ready!');
+      client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "Using !help",  //The message shown
+            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
 });
+
 
 client.on('message', (receivedMessage) => {
     // Prevent bot from responding to its own messages
