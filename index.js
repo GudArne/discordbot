@@ -6,11 +6,11 @@ var generalChannel = client.channels.cache.get("481170353670979587");
 
 client.once('ready', () => {
 	console.log('Ready!');
-      client.client.cache.setPresence({
+      client.client.setPresence({
         status: "online",  //You can show online, idle....
         game: {
-            name: "Using !help",  //The message shown
-            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            name: "flugor",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
 });
