@@ -6,7 +6,7 @@ var generalChannel = client.channels.cache.get("481170353670979587");
 
 client.once('ready', () => {
 	console.log('Ready!');
-      client.user.setPresence({
+      client.setPresence({
         status: "online",  //You can show online, idle....
         game: {
             name: "Using !help",  //The message shown
