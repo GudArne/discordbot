@@ -27,7 +27,7 @@ client.on('message', (receivedMessage) => {
 
     //}
 if(receivedMessage.content == 'rolf'){
-  receivedMessage.channel.send(":fluga: ", {files: ["https://cdn.discordapp.com/attachments/481170353670979587/805781624825708584/roffyf.JPG"]});
+  receivedMessage.channel.send("", {files: ["https://cdn.discordapp.com/attachments/481170353670979587/805781624825708584/roffyf.JPG"]});
 }
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
