@@ -32,6 +32,10 @@ if(receivedMessage.content == 'rolf'){
 if(receivedMessage.content == 'little rolf'){
   receivedMessage.channel.send("https://cdn.discordapp.com/emojis/639552997415845901.png?v=1");
 }
+if(receivedMessage.content == 'bögälg'){
+  receivedMessage.channel.send("", {files: ["https://cdn.discordapp.com/attachments/481170353670979587/805793574079692820/21433208_319999991799291_4175105810900962325_n.jpg"]});
+}
+
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
