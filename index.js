@@ -6,7 +6,7 @@ var generalChannel = client.channels.cache.get("481170353670979587");
 
 client.once('ready', () => {
 	console.log('Ready!');
-client.user.setActivity('rolf', { type: 'WATCHING' })
+client.user.setActivity('flugor', { type: 'WATCHING' })
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
   .catch(console.error);
 
