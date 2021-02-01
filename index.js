@@ -35,6 +35,9 @@ if(receivedMessage.content == 'little rolf'){
 if(receivedMessage.content == 'bögälg'){
   receivedMessage.channel.send("", {files: ["https://cdn.discordapp.com/attachments/481170353670979587/805793574079692820/21433208_319999991799291_4175105810900962325_n.jpg"]});
 }
+if(receivedMessage.content == 'karibu school'){
+  receivedMessage.channel.send("", {files: ["https://i.gyazo.com/d6cd8dced076ae164dff7949a9149b76.png"]});
+}
 
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
