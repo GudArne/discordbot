@@ -26,7 +26,9 @@ client.on('message', (receivedMessage) => {
     //}, 3000);
 
     //}
-
+if(receivedMessage.content === 'rolf'){
+  receivedMessage.channel.send("", {files: ["https://cdn.discordapp.com/attachments/481170353670979587/805781624825708584/roffyf.JPG"]});
+}
 
     const reactionEmoji = receivedMessage.guild.emojis.cache.find(emoji => emoji.name === 'fluga');
 	  receivedMessage.react(reactionEmoji);
